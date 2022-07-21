@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --active-color: #aad6c1;
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+.active {
+  color: grey;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 240px;
+  background-color: white;
+}
+
+header section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3% auto;
+  margin-bottom: 0;
+  width: 55%;
+}
+
+header section aside.left a {
+  font-size: 24px;
+  font-family: "Khand", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--active-color);
+}
+
+header section aside.middle a h1 {
+  font-size: 60px;
+  font-weight: 500;
+  font-family: "Khand", sans-serif;
+  color: black;
+  margin: 0;
+  padding: 0;
+  width: 350px;
+}
+
+header section aside.right a {
+  color: var(--active-color);
+  font-size: 16px;
+}
+
+header section aside.right a i {
+  padding: 0px 10px;
+  color: var(--active-color);
+  font-size: 22px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  gap: 30px;
+}
+header nav ul li a {
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.4s;
+}
+
+header nav ul li a:hover {
+  color: grey;
+}
+
+main {
+  width: 860px;
+  margin: 0 auto;
+  padding: 240px 0px;
+}
+
+main section.banner {
+  background-image: url(/assets/image/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 493px;
+}
+
+main .container {
+  width: 100%;
+  height: 378px;
+  margin-top: 60px;
+  background-color: var(--active-color);
+}
+
+main .container article h2 {
+  width: 60%;
+  font-weight: 400;
+  font-size: 55px;
+  color: white;
+  padding: 20px 0px 0px 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main .container .bottom_line {
+  width: 7%;
+  border-bottom: solid 1px white;
+  margin: 0px 0px 0px 50px;
+}
+
+main .container p {
+  width: 12%;
+  margin: 30px 0px 0px 50px;
+  color: white;
+  font-family: "Khand", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+}
+
+main .about_container {
+  margin-top: 60px;
+}
+main .about_container article {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+main .about_container article h2 {
+  font-family: "Khand", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+}
+main .about_container article div {
+  width: 82%;
+  border-bottom: solid 1px black;
+}
+
+main .about_container .items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 425px;
+  column-gap: 100px;
+}
+
+main .about_container .items div {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 210px;
+}
+
+main .about_container .items div h6 {
+  font-size: 16px;
+  font-family: "Khand", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  margin: 0;
+}
+
+main .about_container .items div p,
+li {
+  font-size: 16px;
+  font-family: "Khand", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+main .about_container .items div ul li {
+  list-style: disc;
+}
+
+main .contact_container {
+  margin-top: 60px;
+}
+main .contact_container article {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+main .contact_container article h2 {
+  font-family: "Khand", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+}
+main .contact_container article div {
+  width: 78%;
+  border-bottom: solid 1px black;
+}
+
+main .contact_container .items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 425px;
+}
+
+main .contact_container .items div {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 210px;
+}
+main .contact_container .items div h5 {
+  margin: 0px 0px 0px;
+  font-family: "Khand", sans-serif;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+}
+main .contact_container .items div h6 {
+  font-size: 16px;
+  font-family: "Khand", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  margin: 5px 0 20px;
+}
+
+main .contact_container .items div p {
+  font-size: 16px;
+  font-family: "Khand", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+main section.contact_container div.items div.aside_left {
+  width: 72%;
+}
+
+main section.contact_container div.items div.aside_top {
+  margin-top: -214px;
+  width: 72%;
+}
+
+main section.contact_container div.items div.aside_right {
+  width: 500px;
+  height: 425px;
+}
+
+main section.contact_container div.items div.aside_right form {
+  display: grid;
+  row-gap: 20px;
+}
+
+main section.contact_container div.items div.aside_right form input {
+  height: 42px;
+  background-color: #aad6c1;
+  border: none;
+  padding: 0px 10px;
+  outline: none;
+  transition: 0.4s;
+}
+main section.contact_container div.items div.aside_right form input:hover {
+  background-color: #7fa191;
+}
+
+main
+  section.contact_container
+  div.items
+  div.aside_right
+  form
+  input:hover:focus {
+  background-color: #c4f2dc;
+  box-shadow: 1px 0px 5px 1px #7fa191;
+}
+
+main section.contact_container div.items div.aside_right form textarea {
+  max-width: 500px;
+  max-height: 126px;
+  min-width: 483px;
+  min-height: 126px;
+  resize: none;
+  background-color: #aad6c1;
+  border: none;
+  padding: 10px 10px 0px;
+  outline: none;
+  transition: 0.4s;
+}
+
+main section.contact_container div.items div.aside_right form textarea:hover {
+  background-color: #7fa191;
+}
+
+main
+  section.contact_container
+  div.items
+  div.aside_right
+  form
+  textarea:hover:focus {
+  background-color: #c4f2dc;
+  box-shadow: 1px 0px 5px 1px #7fa191;
+}
+
+main section.contact_container div.items div.aside_right form button {
+  width: 151px;
+  height: 42px;
+  margin: 0 70%;
+  background-color: #7fa191;
+  border: none;
+  font-size: 16px;
+  color: white;
+  font-weight: 100;
+  font-family: "Khand", sans-serif;
+  letter-spacing: 0.1em;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+main section.contact_container div.items div.aside_right form button:hover {
+  background-color: #aad6c1;
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: var(--active-color);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+footer p {
+  color: white;
+  font-size: 16px;
+  font-family: "Khand", sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+}
